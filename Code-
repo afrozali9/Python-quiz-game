@@ -1,0 +1,42 @@
+print("Welcome to my computer quiz!")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let's play :)")
+score = 0
+
+answer = input("What is 6 + 2? ")
+if answer.lower() == "8":
+    print('Correct!')
+    score += 1
+    print(score)
+else:
+    print ("Incorrect")
+    print(score)
+    
+
+answer = input("What is 4 - 2 ")
+if answer.lower() == "2":
+    print('Correct!')
+    score += 1
+    print(score)
+else:
+    print ("Incorrect")
+    print(score)
+
+
+answer = input("What 4*2 ")
+if answer.lower() == "8":
+    print('Correct!')
+    score += 1
+    print(score)
+else:
+    print ("Incorrect")
+    print(score)
+    
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score / 3) * 100) + "%.") 
+    
